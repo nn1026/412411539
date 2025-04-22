@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 標楷體;
+  font-family: 標楷體, sans-serif;
   background: var(--grey-light);
   color: var(--grey-dark);
   font-size: 12px;
@@ -41,12 +41,12 @@ img {
 .blog-content span {
   text-transform: uppercase;
   color: var(--primary);
-  letter-spacing: var(--letter-spacimg);
+  letter-spacing: var(--letter-spacing);
   font-weight: 500;
 }
 .blog-content h3 {
   text-transform: capitalize;
-  letter-spacing: var(--letter-spacimg);
+  letter-spacing: var(--letter-spacing);
   margin: 0.5rem 0;
 }
 .blog-content p {
@@ -60,4 +60,22 @@ img {
 }
 .blog:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.blog-center {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 2rem;
+}
+@media screen and (max-width: 450px) {
+  .blog-center {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.blog-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
