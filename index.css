@@ -1,0 +1,25 @@
+.index-img{
+    height: 200px;
+    width:auto ;
+    margin: 0 auto;
+}
+iframe{
+    height: 600px;
+    width: 70%;
+    resize: both;
+}
+.show-classdemo{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-link{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
