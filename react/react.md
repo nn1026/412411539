@@ -8,6 +8,11 @@ npx create-react-app yourfoldername
 ![](picture/4r.JPG)
 [node 與 npm 有版本關係要注意](https://nodejs.org/zh-tw/about/previous-releases)
 
+1.5. 把node＿module抓回來
+```
+npm install
+```
+
 2. 前往react 專案目錄
 ```
 cd 資料夾名稱
